@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  max-width: 1400px;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 20%;
+}
+
+.header .user > i,
+.header .cart > i {
+  font-size: 2rem;
+  color: #737071;
+}
+
+.header .logo span {
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--primaryColor);
+}
+
+.header .navlinks {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.header .controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
