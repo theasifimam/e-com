@@ -1,9 +1,9 @@
-import "@/components/style.css";
+import HeroSlider from "@/components/UI/HeroSlider";
 
 export default function Home() {
   return (
-    <>
-      <h1>home page</h1>
-    </>
+    <main className="main">
+      <HeroSlider />
+    </main>
   );
 }

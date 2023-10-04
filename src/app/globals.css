@@ -1,6 +1,10 @@
 :root {
   --primaryColor: #013d29;
   --text: #737071;
+  --primaryBG: #ffffff;
+  --secondaryBG: #f6f6f6;
+
+  --borderRadius: 2em;
 }
 
 * {
@@ -13,12 +17,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 }
 
 .container {
   width: 100%;
-  border: 2px solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

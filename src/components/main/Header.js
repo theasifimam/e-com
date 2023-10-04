@@ -60,7 +60,7 @@ const Header = () => {
         </ul>
 
         <div className="right controls">
-          <div className="search">
+          <div className="search control">
             <input
               type="search"
               name="search"
@@ -70,12 +70,12 @@ const Header = () => {
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
 
-          <div className="user">
+          <div className="user control">
             <i class="fa-regular fa-user"></i>
             <span>Account</span>
           </div>
 
-          <div className="cart">
+          <div className="cart control">
             <i class="fa-brands fa-opencart"></i>
             <span>Cart</span>
           </div>

@@ -1,3 +1,7 @@
+.main {
+  max-width: 1400px;
+}
+
 .header {
   display: flex;
   width: 100%;
@@ -11,7 +15,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  width: 20%;
+  width: 10%;
 }
 
 .header .user > i,
@@ -30,10 +34,68 @@
   display: flex;
   list-style: none;
   gap: 15px;
+  width: 40%;
 }
 
 .header .controls {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 25px;
+  width: 40%;
+  justify-content: flex-end;
+}
+
+.header .controls .control {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--text);
+  font-weight: 500;
+  justify-content: flex-end;
+}
+
+.header .controls .user,
+.header .controls .cart {
+  width: 100px;
+}
+
+.header .controls .search {
+  position: relative;
+  width: calc(100% - 200px);
+}
+
+.header .controls .search > i {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  color: var(--text);
+}
+
+.header .controls .search input {
+  width: 100%;
+  padding: 15px 20px;
+  padding-right: 40px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background: var(--secondaryBG);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  max-height: 500px;
+}
+
+.swiper-slide img {
+  object-fit: cover;
+  border-radius: var(--borderRadius);
 }
