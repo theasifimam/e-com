@@ -14,7 +14,12 @@ const Header = () => {
       <div className="header">
         <div className="logo">
           <div className="logo-img">
-            <Image src="/asset-img/logo.png" width="60" height="60" />
+            <Image
+              src="/asset-img/logo.png"
+              width="60"
+              alt="logo"
+              height="60"
+            />
           </div>
           <span>Logo</span>
         </div>
@@ -26,7 +31,7 @@ const Header = () => {
               className={pathName === "/" ? "active navlink" : "navlink"}
             >
               <span>Catogories</span>
-              <i class="fa-solid fa-chevron-down"></i>
+              <i className="fa-solid fa-chevron-down"></i>
             </Link>
           </li>
           <li>
@@ -67,16 +72,16 @@ const Header = () => {
               id="search"
               placeholder="Search Products"
             />
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i className="fa-solid fa-magnifying-glass"></i>
           </div>
 
           <div className="user control">
-            <i class="fa-regular fa-user"></i>
+            <i className="fa-regular fa-user"></i>
             <span>Account</span>
           </div>
 
           <div className="cart control">
-            <i class="fa-brands fa-opencart"></i>
+            <i className="fa-brands fa-opencart"></i>
             <span>Cart</span>
           </div>
         </div>

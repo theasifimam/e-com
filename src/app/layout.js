@@ -3,6 +3,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Footer from "@/components/main/Footer";
 import "@/components/style.css";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <header>
+      <Head>
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
           referrerpolicy="no-referrer"
         />
-      </header>
+      </Head>
       <body className={inter.className}>
         <Header />
         {children}
